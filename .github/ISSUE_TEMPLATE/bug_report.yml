@@ -1,0 +1,97 @@
+name: "🐞 Bug Report"
+description: "File a bug report for AxionOS."
+title: "[Bug]: "
+labels: ["🐛 bug", "🛠️ triage"]
+projects: ["AxionOS/issue_tracker"]
+assignees:
+  - AxionOS-team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🚀 **Thanks for taking the time to report an issue with AxionOS!**  
+        Please fill out the details below so we can troubleshoot the problem effectively.  
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "❗ What happened?"
+      description: "Describe the issue and what you expected to happen."
+      placeholder: "Describe the bug here..."
+      value: "A bug occurred! 🐞"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: "📱 Device Model"
+      description: "Enter the exact device model (e.g., Pixel 7 Pro, OnePlus 9)."
+      placeholder: "ex. Pixel 7 Pro"
+    validations:
+      required: true
+
+  - type: input
+    id: build-version
+    attributes:
+      label: "🆕 AxionOS Version"
+      description: "Enter the exact AxionOS version (e.g., v5.1-20240210)."
+      placeholder: "ex. v5.1-20240210"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: gapps
+    attributes:
+      label: "📦 Are you using GApps?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: root
+    attributes:
+      label: "📂 Is your device rooted?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "🔄 Steps to Reproduce"
+      description: "Provide detailed steps to reproduce the issue."
+      placeholder: |
+        1️⃣ Go to Settings  
+        2️⃣ Click on 'Display'  
+        3️⃣ Enable Dark Mode  
+        4️⃣ See the bug 🐛
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📜 Log Output"
+      description: "Attach relevant logs (logcat, dmesg, etc.). This will be formatted automatically."
+      render: shell
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: "✅ Verification Checklist"
+      description: "Before submitting, please confirm that you have checked the following."
+      options:
+        - label: "🔍 I have searched for existing issues and found none related to this bug."
+          required: true
+        - label: "🔄 I have reproduced the issue after a clean install without modifying system files."
+          required: true
+        - label: "⚙️ I have tested with different configurations (e.g., GApps/no GApps, rooted/non-rooted)."
+          required: true
+        - label: "📎 I have attached all necessary logs and provided reproduction steps."
+          required: true
+

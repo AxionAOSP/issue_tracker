@@ -6,7 +6,7 @@ Thank you for helping improve AxionOS! Before submitting a bug report, please fo
 Before creating a new issue, check if someone has already reported the same bug. This helps avoid duplicates and speeds up the resolution process.
 
 ## 2. Open a New Issue
-Navigate to the [AxionOS GitHub Issues](https://github.com/AxionOS/issues) page and click on `New Issue`. Select the `Bug Report` template.
+Navigate to the [AxionOS GitHub Issues](https://github.com/AxionAOSP/issue_tracker/issues) page and click on `New Issue`. Select the `Bug Report` template.
 
 ## 3. Fill in the Required Details
 Use the provided bug report template and fill in the following sections:
